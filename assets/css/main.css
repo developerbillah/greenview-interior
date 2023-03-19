@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root{
+  --primary-color: #2B3593;
+  --secondary-color: #0CA44C;
+  --dark-color: #061539;
+  --white: #fff;
+  --gray-text: #8E8E8E;
+  --heading-font:  'Outfit', sans-serif;
+  --font-primay: 'Poppins', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif; 
+  --font-others: 'Space Grotesk', sans-serif;
+  --body-bg: #F5F5F5;
+  --gradiant: linear-gradient(359.89deg, rgba(43, 53, 147, 0.57) 0.09%, rgba(43, 53, 147, 0) 98.14%);
+  --gradiyent-2: linear-gradient(80.88deg, rgba(43, 53, 147, 0.58) 0%, rgba(12, 164, 76, 0.24) 100%);
+  --transition: all .6s cubic-bezier(.165, .84, .44, 1);
+  --shadow: 0px 6px 30px rgba(0,0,0,0.08);
+}
+
+/* Rest & Helpers */
+body{
+  font-family: var(--font);
+  background: var(--body-bg);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+a{
+  text-decoration: none;
+  color: var(--secondary-color)!important;
+  transition: var(--transition);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+}
+
+a:hover{
+  color: var(--primary-color);
+}
+
+p{
+  color: var(--dark-color);
+}
+
+img{
+  width:100%;
+}
+
+.bg-gray{
+  background: var(--primary-color);
+}
+
+.section-padding{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-heading{
+  padding: 20px 0px;
+}
+.section-heading h2{
+  font-size: 36px;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-flex;
+  text-transform: uppercase;
+}
+
+.section-heading h2::before{
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 5px;
+  background: var(--secondary-color);
+  bottom: -5px;
+  left: 3px;
+}
+
+
+/* Custom Animation */
+.up-down{
+  animation: up-down linear 8s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: up-down linear 8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: up-down linear 8s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: up-down linear 8s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: up-down linear 8s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes up-down{
+  0% {
+    transform:  translate(1px,20px)  ;
+  }
+  24% {
+    transform:  translate(1px,30px)  ;
+  }
+  50% {
+    transform:  translate(1px,12px)  ;
+  }
+  74% {
+    transform:  translate(1px,22px)  ;
+  }
+  100% {
+    transform:  translate(1px,22px)  ;
+  }
+}
+
+@-moz-keyframes up-down{
+  0% {
+    -moz-transform:  translate(1px,20px)  ;
+  }
+  24% {
+    -moz-transform:  translate(1px,30px)  ;
+  }
+  50% {
+    -moz-transform:  translate(1px,12px)  ;
+  }
+  74% {
+    -moz-transform:  translate(1px,22px)  ;
+  }
+  100% {
+    -moz-transform:  translate(1px,22px)  ;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform:  translate(1px,20px)  ;
+  }
+  24% {
+    -webkit-transform:  translate(1px,30px)  ;
+  }
+  50% {
+    -webkit-transform:  translate(1px,12px)  ;
+  }
+  74% {
+    -webkit-transform:  translate(1px,22px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(1px,22px)  ;
+  }
+}
+
+@-o-keyframes up-down {
+  0% {
+    -o-transform:  translate(1px,20px)  ;
+  }
+  24% {
+    -o-transform:  translate(1px,30px)  ;
+  }
+  50% {
+    -o-transform:  translate(1px,12px)  ;
+  }
+  74% {
+    -o-transform:  translate(1px,22px)  ;
+  }
+  100% {
+    -o-transform:  translate(1px,22px)  ;
+  }
+}
+
+@-ms-keyframes up-down {
+  0% {
+    -ms-transform:  translate(1px,20px)  ;
+  }
+  24% {
+    -ms-transform:  translate(1px,30px)  ;
+  }
+  50% {
+    -ms-transform:  translate(1px,12px)  ;
+  }
+  74% {
+    -ms-transform:  translate(1px,22px)  ;
+  }
+  100% {
+    -ms-transform:  translate(1px,22px)  ;
+  }
+}
