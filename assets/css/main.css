@@ -302,6 +302,78 @@ button.active span{
   color: #fff;
 }
 
+/* Work Process */
+.process{
+  padding: 30px 10px;
+  border-right: 1px solid #d5d5d5;
+}
+
+.process:last-child{
+  border-right: none;
+}
+
+.work-process{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.work-process .process:hover{
+  background: var(--white);
+}
+
+.work-process .process{
+  transition: .5s;
+}
+
+.work-process .process h3 {
+  font-size: 77px;
+  font-family: 'Poppins';
+  -webkit-text-stroke: 1px #003c71;
+  color: transparent;
+}
+
+.work-process .process:hover h3{
+  color: var(--dark-color);
+  -webkit-text-stroke: 1px solid var(--dark-color);
+  cursor: pointer;
+}
+
+.work-process .process h5 {
+  font-size: 18px;
+  font-family: 'Outfit';
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.work-process .process span {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: var(--gray-text);
+}
+
+/* Work Process */
+
+section.workProcess-wrapper h2 {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin: 30px 0px;
+}
+
+section.workProcess-wrapper h2::before {
+  width: 100px;
+  height: 3px;
+  background: var(--secondary-color);
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -7px;
+}
+
+
 /* Custom Animation */
 .up-down{
   animation: up-down linear 8s;
