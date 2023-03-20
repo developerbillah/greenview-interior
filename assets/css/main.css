@@ -82,8 +82,8 @@ a.outline-btn:hover::before {
 }
 
 .section-padding{
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .section-heading{
@@ -373,6 +373,46 @@ section.workProcess-wrapper h2::before {
   bottom: -7px;
 }
 
+
+/* Testimonial Section */
+.feedback {
+  background: #F1EBEB;
+  border-left: 20px solid green;
+  padding: 15px 20px;
+}
+
+.feedback p {
+  color: #1F2349;
+  font-size: 18px;
+  font-family: var(--font-primay);
+  position: relative;
+  padding: 20px;
+}
+
+.author img {
+  width: 47px;
+  height: 47px;
+}
+
+.author-bio {
+  margin-left: 12px;
+  font-family: var(--font-primay);
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.author-bio h5 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-primay);
+  margin-bottom: 0;
+}
+
+.author-bio span {
+  color: #7C7373;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
 /* Custom Animation */
 .up-down{
