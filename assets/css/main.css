@@ -43,6 +43,10 @@ a:hover{
   color: var(--primary-color);
 }
 
+ul{
+  list-style: none;
+}
+
 p{
   color: var(--dark-color);
 }
@@ -128,7 +132,25 @@ img{
   padding: 5px
 }
 
+/* Menu */
+nav {
+  padding: 13px 0px;
+}
 
+a.navbar-brand img {
+  width: 77%;
+}
+
+ul.main-menu li a {
+  padding: 0px 15px;
+  color: var(--dark-color)!important;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+}
+
+ul.main-menu {
+  margin-bottom: 0;
+}
 
 
 
