@@ -57,10 +57,10 @@ $(document).ready(function(){
     }
   });
 
-  // Gallery Lightbox
-  lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true,
-    'disableScrolling': true,
+  // Project Counter
+  $('.total-project').counterUp({
+    delay: 10,
+    time: 1000
   });
+
 });
