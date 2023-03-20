@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6{
 
 a{
   text-decoration: none;
-  color: var(--secondary-color)!important;
+  color: var(--primary-color)!important;
   transition: var(--transition);
   font-weight: 500;
   text-transform: uppercase;
@@ -53,6 +53,28 @@ p{
 
 img{
   width:100%;
+}
+
+a.outline-btn {
+  position: relative;
+  padding: 5px 0px;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  font-size: 20px;
+}
+
+a.outline-btn::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background: green;
+  bottom: 0;
+  transition: .5s;
+}
+
+a.outline-btn:hover::before {
+  width: 100%;
 }
 
 .bg-gray{
@@ -203,6 +225,81 @@ button.active span{
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+/* Group Image */
+.group-image {
+  position: relative;
+  height: 540px;
+}
+
+.group-image img.parent {
+  max-width: 90%;
+  min-width: 90%;
+  position: absolute;
+  object-fit: cover;
+  min-height: 440px;
+  max-height: 440px;
+}
+
+.group-image img.child {
+  position: absolute;
+  min-width: 60%;
+  max-width: 60%;
+  min-height: 290px;
+  max-height: 290px;
+  object-fit: cover;
+  top: 165px;
+  right: 5px;
+  border: 10px solid #fff;
+}
+
+/* Company Content */
+.company-content h5 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.company-content h2{
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 78px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.company-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-text);
+  font-family: var(--font-primay);
+}
+
+.project-counter{
+  background: var(--secondary-color);
+}
+
+.project-counter i {
+  color: var(--white);
+  font-size: 48px;
+}
+
+.project-counter .counter {
+  font-size: 32px;
+  color: var(--white);
+  font-family: var(--font-others);
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.project-counter span {
+  text-transform: uppercase;
+  font-family: var(--font-others);
+  line-height: 18px;
+  color: #fff;
 }
 
 /* Custom Animation */
