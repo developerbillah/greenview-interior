@@ -152,7 +152,58 @@ ul.main-menu {
   margin-bottom: 0;
 }
 
+/* Slider */
+.slide{
+  padding: 120px 0px;
+}
+.slide-content h2 {
+  font-size: 68px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+.slide-content h2 span {
+  background: var(--secondary-color);
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+.slide-content p {
+  font-size: 22px;
+  color: var(--white);
+  font-family: var(--font-primay);
+  padding: 20px 0px;
+}
+
+.slide-content a {
+  background: var(--primary-color);
+  color: var(--white)!important;
+  padding: 12px 20px;
+  font-family: 'Montserrat';
+}
+
+.slide-content a:hover {
+  background: var(--dark-color);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 20px;
+  height: 20px;
+  box-shadow:0px 0px 10px #474787;
+}
+
+button.active span{
+  background: var(--secondary-color)!important;
+  border: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 /* Custom Animation */
 .up-down{

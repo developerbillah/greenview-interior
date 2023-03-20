@@ -3,8 +3,8 @@ $(document).ready(function(){
     loop:true,
     autoplay: true,
     items: 1,
-    dots: false,
-    nav: true,
+    dots: true,
+    nav: false,
     navText: ['PREV', 'NEXT'],
     smartSpeed: 1000,
   });
