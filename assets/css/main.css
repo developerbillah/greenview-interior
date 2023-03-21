@@ -404,8 +404,6 @@ button.active span{
   color: var(--gray-text);
 }
 
-/* Work Process */
-
 section.workProcess-wrapper h2 {
   text-align: center;
   text-transform: uppercase;
@@ -425,6 +423,31 @@ section.workProcess-wrapper h2::before {
   bottom: -7px;
 }
 
+/* Latest Project Video */
+.project-video{
+  background: #F1EBEB;
+}
+
+.project-video-gallery h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  font-weight: 700;
+  color: #2B3593;
+}
+
+.project-video-gallery a {
+  background: var(--secondary-color);
+  color: var(--white)!important;
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 3px;
+  transition: .5s;
+}
+
+.project-video-gallery a:hover{
+  background: #0c7839;
+}
 
 /* Testimonial Section */
 .feedback {
@@ -671,4 +694,104 @@ iframe {
   100% {
     -ms-transform:  translate(1px,22px)  ;
   }
+}
+
+
+/* Click the image one by one to see the different layout */
+
+/* Owl Carousel */
+
+.owl-prev {
+  height: 36px;
+  position: absolute;
+  top: -12px;
+  width: 50px;
+  z-index: 1000;
+  cursor: pointer;
+  color: var(--white)!important;
+  margin-top: -27px;
+  right: 50px;
+  background: #1FB65E!important;
+
+}
+
+.owl-next {
+  height: 36px;
+  position: absolute;
+  top: -22px;
+  width: 50px;
+  z-index: 1000;
+  right: 0;
+  cursor: pointer;
+  color: var(--white)!important;
+  margin-top: -17px;
+  background: #0CA44C!important;
+}
+button.owl-prev span, button.owl-next span {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  opacity: 0.5;
+}
+
+/* Popup Text */
+
+.white-popup-block {
+  background: #FFF;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.popuptext {
+  display: table;
+}
+.popuptext p {
+  margin-bottom: 10px;
+}
+.popuptext span {
+  font-weight: bold;
+  float: right;
+}
+/* Popup Text */
+
+/* Icon CSS */
+.item {
+  position: relative;
+}
+.item img{
+  max-height: 350px;
+  object-fit: cover;
+}
+.item i {
+  display: none;
+  font-size: 4rem;
+  color: #FFF;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.item a {
+  display: block;
+  width: 100%;
+}
+.item a::before {
+  content: "";
+  background: linear-gradient(359.1deg, rgba(43, 53, 147, 0.71) 0.71%, rgba(217, 217, 217, 0) 99.17%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.item a i {
+  display: block;
+  z-index: 2;
 }
