@@ -13,6 +13,7 @@ $(document).ready(function(){
   $('#client-review').owlCarousel({
     loop:true,
     autoplay: true,
+    margin: 20,
     items: 2,
     dots: true,
     nav: false,

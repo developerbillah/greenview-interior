@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6{
 
 a{
   text-decoration: none;
-  color: var(--primary-color)!important;
+  color: var(--secondary-color)!important;
   transition: var(--transition);
   font-weight: 500;
   text-transform: uppercase;
@@ -377,16 +377,31 @@ section.workProcess-wrapper h2::before {
 /* Testimonial Section */
 .feedback {
   background: #F1EBEB;
-  border-left: 20px solid green;
-  padding: 15px 20px;
+  border-left: 20px solid var(--secondary-color);
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 35px;
+  padding-bottom: 30px;
 }
 
 .feedback p {
   color: #1F2349;
-  font-size: 18px;
   font-family: var(--font-primay);
   position: relative;
-  padding: 20px;
+  padding-bottom: 35px;
+}
+
+.author {
+  position: relative;
+}
+
+.author::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 40%;
+  background: var(--primary-color);
+  top: -16px;
 }
 
 .author img {
@@ -412,6 +427,89 @@ section.workProcess-wrapper h2::before {
   color: #7C7373;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+img.quote {
+  position: absolute;
+  right: 0;
+  width: 120px!important;
+  height: 80px!important;
+}
+
+.feedback .author img {
+  width: 48px;
+  height: 48px;
+}
+
+
+/* Footer */
+.footer {
+  background: var(--dark-color);
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+/*END FOOTER SOCIAL DESIGN*/
+@media only screen and (max-width:768px) { 
+.single_footer{margin-bottom:30px;}
+}
+.single_footer h4 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.single_footer h4::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 40px;
+  background: var(--white);
+  margin-top: 20px;
+}
+.single_footer p{color:#fff;}
+.single_footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.single_footer ul li a {
+  color: var(--white)!important;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  line-height: 36px;
+  font-size: 15px;
+  text-transform: lowercase;
+}
+.single_footer ul li a:hover { color: #ff3666; }
+.single_footer_address ul li{color:#fff;}
+.single_footer_address ul li span {
+  font-weight: 400;
+  color: #fff;
+  line-height: 28px;
+}
+.contact_social ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+iframe {
+  background: #fff;
+  padding: 10px;
+}
+.copyright {
+  margin-top: 70px;
+  padding-top: 40px;
+  color:#fff;
+  font-size: 15px;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  text-align: center;
+}
+.copyright a{
+  color: var(--body-bg)!important;
+  transition: all 0.2s ease 0s;
 }
 
 /* Custom Animation */
