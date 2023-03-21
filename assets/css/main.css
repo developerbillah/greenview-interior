@@ -61,6 +61,7 @@ a.outline-btn {
   font-weight: 700;
   font-family: var(--font-secondary);
   font-size: 20px;
+  color: var(--primary-color)!important;
 }
 
 a.outline-btn::before {
@@ -300,6 +301,57 @@ button.active span{
   font-family: var(--font-others);
   line-height: 18px;
   color: #fff;
+}
+
+/* Services */
+.services-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.service {
+  min-height: 250px;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  align-items: end;
+}
+
+.service:hover::before{
+  background: linear-gradient(359.89deg, rgba(43, 53, 147, 0.87) 0.09%, rgba(43, 53, 147, 0) 98.14%);
+}
+
+.service::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(359.89deg, rgba(43, 53, 147, 0.57) 0.09%, rgba(43, 53, 147, 0) 98.14%);
+  top: 0;
+  left: 0;
+  transition: .5s ease-in-out;
+}
+
+.service h5 {
+  color: #fff;
+  z-index: 1;
+  font-size: 16px;
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  padding-left: 10px;
+}
+
+.service h5::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: var(--secondary-color);
+  left: 0;
+  top: 0;
 }
 
 /* Work Process */
