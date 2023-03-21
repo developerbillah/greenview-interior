@@ -526,6 +526,40 @@ a.project-view {
 }
 
 
+/* Client Logos */
+
+.bg-dark{
+  background: var(--dark-color);
+}
+section.client-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.client-section .client-logo{
+  margin-bottom: 15px;
+}
+.client-section .client-logo .item {
+  transition: transform 200ms cubic-bezier(.785, .135, .15, .86), box-shadow 200ms cubic-bezier(.785, .135, .15, .86);
+  margin-bottom: 15px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #efeeee;
+  min-height: 80px;
+}
+.client-section .client-logo .item:hover {
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.client-section .client-logo img {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+
+
 /* Testimonial Section */
 .feedback {
   background: #F1EBEB;
