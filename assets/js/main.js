@@ -116,4 +116,18 @@ $(document).ready(function(){
     });
   });
 
+
+  // Side Navigation
+  var nav = document.getElementById("sideNav");
+  var openNav = document.getElementById("openNav");
+  var closeNav = document.getElementById("closeNav");
+
+  openNav.addEventListener('click', function(){
+    nav.style.left = '0px'
+  })
+
+  closeNav.addEventListener('click', function(){
+    nav.style.left = '-100%'
+  })
+
 });
