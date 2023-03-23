@@ -1,25 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-  <meta charset="UTF-8">
+  <meta <?php bloginfo('charset'); ?>>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <!-- Fontawesome -->
-  <link rel="stylesheet" href="./assets/css/all.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet" />
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/main.css">
-
-
-  <title>Greenview Interior & Design | Create.Update.Renovate</title>
+  <?php wp_head();?>
 </head>
-<body>
+<body <?php body_class(); ?>>
   <header>
     <!-- Header Top -->
     <div class="header-top">
@@ -51,7 +39,7 @@
     <!-- Main Navigation Menu -->
     <div class="main-navwrapper bg-white">
       <nav class="container d-flex align-items-center justify-content-between">
-        <a class="navbar-brand" href="index.html"><img src="./assets/img/logo-dark.png" alt=""></a>
+        <a class="navbar-brand" href="index.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo-dark.png" alt=""></a>
        
         <ul class="main-menu d-flex align-items-center">
           <li class="d-none d-md-block d-lg-block d-xl-block"><a href="" class="active">Home</a></li>
@@ -61,7 +49,7 @@
           <li class="d-none d-md-block d-lg-block d-xl-block"><a href="">Gallery</a></li>
           <li class="d-none d-md-block d-lg-block d-xl-block"><a href="">Contact</a></li>
           <button class="d-lg-none d-xl-none d-xxl-none d-sm-block border-0 bg-transparent" id="openNav">
-            <img src="./assets/img/navbar.png" alt="" width="24">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/navbar.png" alt="" width="24">
           </button>
         </ul>
       </nav>
@@ -71,7 +59,7 @@
     <div id="sideNav">
       <nav>
        <div class="d-flex justify-content-between align-items-center">
-        <a class="navbar-brand" href="index.html"><img src="./assets/img/logo-dark.png" alt=""></a>
+        <a class="navbar-brand" href="index.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo-dark.png" alt=""></a>
         <button id="closeNav"><i class="fa-solid fa-xmark"></i></button>
        </div>
        <ul class="mobile-navItem">
@@ -96,7 +84,7 @@
       </div>
 
       <div class="latest-projects">
-        <article class="project-card" style="background: url('./assets/img/project-1.png');">
+        <article class="project-card" style="background: url('<?php echo get_template_directory_uri();?>/assets/img/project-1.png');">
           <div class="project-meta">
             <h6>Hotel/Restaurant interior</h6>
             <ul class="project-cat-list">
@@ -107,7 +95,7 @@
         </article>
 
         <!-- Project 02 -->
-        <article class="project-card" style="background: url('./assets/img/project-6.png');">
+        <article class="project-card" style="background: url('<?php echo get_template_directory_uri();?>/assets/img/project-6.png');">
           <div class="project-meta">
             <h6>Hotel/Restaurant interior</h6>
             <ul class="project-cat-list">
@@ -118,7 +106,7 @@
         </article>
 
         <!-- Project 03 -->
-        <article class="project-card" style="background: url('./assets/img/project-3.png');">
+        <article class="project-card" style="background: url('<?php echo get_template_directory_uri();?>/assets/img/project-3.png');">
           <div class="project-meta">
             <h6>Hotel/Restaurant interior</h6>
             <ul class="project-cat-list">
@@ -129,7 +117,7 @@
         </article>
 
         <!-- Project 04 -->
-        <article class="project-card" style="background: url('./assets/img/project-4.png');">
+        <article class="project-card" style="background: url('<?php echo get_template_directory_uri();?>/assets/img/project-4.png');">
           <div class="project-meta">
             <h6>Hotel/Restaurant interior</h6>
             <ul class="project-cat-list">
@@ -140,7 +128,7 @@
         </article>
 
         <!-- Project 05 -->
-        <article class="project-card" style="background: url('./assets/img/project-5.png');">
+        <article class="project-card" style="background: url('<?php echo get_template_directory_uri();?>/assets/img/project-5.png');">
           <div class="project-meta">
             <h6>Hotel/Restaurant interior</h6>
             <ul class="project-cat-list">
@@ -151,7 +139,7 @@
         </article>
 
         <!-- Project 06 -->
-        <article class="project-card" style="background: url('./assets/img/project-2.png');">
+        <article class="project-card" style="background: url('<?php echo get_template_directory_uri();?>/assets/img/project-2.png');">
           <div class="project-meta">
             <h6>Hotel/Restaurant interior</h6>
             <ul class="project-cat-list">
@@ -211,12 +199,6 @@
   </footer>
   <!-- Footer End -->
 
-  <script src="./assets/js/jquery-3.6.4.min.js"></script>
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/js/owl.carousel.min.js"></script>
-  <script src="./assets/js/jquery.waypoints.min.js"></script>
-  <script src="./assets/js/jquery.counterup.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <?php wp_footer();?>
 </body>
 </html>

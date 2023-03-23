@@ -1,4 +1,6 @@
-$(document).ready(function(){
+
+
+jQuery(document).ready(function($) {
   $('#hero-slider').owlCarousel({
     loop:true,
     autoplay: true,
@@ -123,11 +125,10 @@ $(document).ready(function(){
   var closeNav = document.getElementById("closeNav");
 
   openNav.addEventListener('click', function(){
-    nav.style.left = '0px'
+    nav.style.left = '0px';
   })
 
   closeNav.addEventListener('click', function(){
     nav.style.left = '-100%'
   })
-
 });

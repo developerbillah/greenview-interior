@@ -581,7 +581,7 @@ article.project-card:hover .project-meta {
 
 a.project-view {
   z-index: 1;
-  color: var(--white)!important;
+  color: var(--secondary-color)!important;
   font-size: 13px;
   font-weight: 700;
   padding: 10px 0px;
